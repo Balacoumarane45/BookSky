@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/256/2702/2702154.png">
+</head>
+<body>
+    <div class="title">
+        <h1>BookSky</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h5> Robert Kiyosaki</h5>
+            <br>
+            <p>
+                "Rich Dad Poor Dad" by Robert Kiyosaki contrasts financial mindsets of two dads: one wealthy but not formally educated, 
+                the other educated yet financially struggling. It emphasizes financial literacy, assets vs. liabilities, and the importance of 
+                investing and entrepreneurship, offering insights on wealth-building strategies for personal finance success.</p>
+            <button onclick="deletebook(event)">Delete</button>
+
+        </div>
+
+
+    </div>
+    <button class="add-button" id="popup-button" onclick="popup()">+</button>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title">
+            <input type="text" placeholder="Book Author" id="book-author">
+            <textarea placeholder="Short Description" id="short"></textarea>
+            <button id="add">ADD</button>
+            <button id="cancel" onclick="popupclose()">CANCEL</button>
+        </form>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
